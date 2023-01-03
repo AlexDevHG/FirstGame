@@ -172,14 +172,7 @@ function gameWin() {
         pResult.innerText = 'Primera vez? Trata de superar tu record';
     }
 
-    setTimeout(function resetGame (){
-        level = 0;
-        lives = 3;
-        timeStart=undefined;
-        pResult.innerText=' ';
-        playerPosition.x=undefined;
-        playerPosition.y=undefined;
-    },2000)
+    setTimeout(() => location.reload(),2000)
 }
 
 function showLives() {
